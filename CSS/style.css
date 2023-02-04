@@ -1,0 +1,889 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    display: flex;
+}
+.container{
+    width: 1410px;
+    margin: 0 auto;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.title h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #FF5538;
+    font-weight: 500;
+    line-height: 140%;
+    text-transform: capitalize;
+}
+.title h2{
+    width: 449px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    color: #29313D;
+    font-weight: 600;
+    line-height: 140%;
+    text-transform: capitalize;
+}
+
+
+
+
+.bagbannerimg{
+    width: 100%;
+    height: 1106px;
+    background: url(../images/banner.png) ;
+    position: absolute;
+    z-index: -1;
+}
+/* =============================
+nav start
+============================= */
+nav{
+   padding-top: 30px;
+}
+
+nav .logo{
+    width: 15%;
+}
+nav .nav-item{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .nav-item ul{
+    display: flex;
+    justify-content: center;
+    column-gap: 48px;
+    color: #29313D;
+}
+nav .nav-item ul li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+nav .nav-item ul li i{
+    margin-left: 8px;
+}
+nav .button{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .button a{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 200%;
+    background: #FF5538;
+    color: #fff;
+    border: 1px solid #FF5538;
+    padding: 14px 28px;
+    border-radius: 18px;
+    transition: .5s;
+}
+nav .button a:hover{
+    background: transparent;
+    color: #FF5538;
+}
+/* =============================
+nav end
+============================= */
+/* =============================
+banner start
+============================= */
+.banner{
+    padding: 180px 0;
+    position: relative;
+}
+
+.banner .round-shape{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 40px;
+    left: 725px;
+    border: 1px solid #FFABBA;
+    position: absolute;
+    animation: myani 4s infinite linear;
+}
+.banner .iner-shape{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #FFABBA;
+    position: absolute;
+    bottom: 0;
+    left: 9px;
+}
+@keyframes myani {
+   from{transform:rotate(0);
+    }to{
+    transform:rotate(360deg);
+    }
+   
+}
+.banner .round1{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #C087EE;
+    top: 128px;
+    left: 1043px;
+    animation: tb 2s infinite linear alternate;
+}
+@keyframes tb {
+    from{
+        transform: translateY(-70px);
+    }to{
+        transform: translateY(0);
+    }
+    
+}
+.banner .cross{
+    color: #C087EE;
+    position: absolute;
+    font-size: 20px;
+    top: 200px;
+    right: 400px;
+    animation: cross 3s linear infinite ;
+}
+@keyframes cross{
+    from{transform:rotate(0);
+    }to{
+    transform:rotate(360deg);
+    }
+}
+.banner .cross1{
+    color: #C087EE;
+    position: absolute;
+    font-size: 20px;
+    top: 120px;
+    left: 400px;
+    animation: cross1 3s linear infinite ;
+}
+@keyframes cross1{
+    from{transform:rotate(0);
+    }to{
+    transform:rotate(360deg);
+    }
+}
+.banner .cross2{
+    position: absolute;
+    font-size: 20px;
+    top: 425px;
+    right: 400px;
+    animation: cross2 2s linear infinite alternate ;
+}
+@keyframes cross2{
+    from{transform:scale(1);
+    }to{
+        transform:scale(1.5);
+    }
+}
+/* ================================ */
+
+.banner h1{
+    text-transform: capitalize;
+    width: 771px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 130%;
+    color: #29313D;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.banner p{
+    width: 547px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 200%;
+    color: #29313D;
+    text-align: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+}
+.banner .button{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
+    margin-top: 44px;
+}
+
+.banner .button a{
+    width: 7%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 200%;
+    background: #FF5538;
+    color: #fff;
+    border: 1px solid #FF5538;
+    padding: 14px 28px;
+    border-radius: 18px;
+    text-align: center;
+    transition: .5s;
+}
+.banner .button a:hover{
+    background: transparent;
+    color: #FF5538;
+}
+/* =============================
+banner end
+============================= */
+/* =============================
+service start
+============================= */
+.service{
+    padding: 48px 0 82px 0 ;
+}
+.service .box{
+    justify-content: space-between;
+    transform: translateY(-15%);
+}
+.service .item{
+    width: 32%;
+    height: 327px;
+    background: #fff;
+    box-shadow: #29313D;
+    padding: 40px 25px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 7px 82px -6px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 7px 82px -6px rgba(0,0,0,0.1);
+    box-shadow: 0px 7px 82px -6px rgba(0,0,0,0.1);;
+}
+.service .item h3{
+    text-transform: capitalize;
+    margin-top: 34px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #29313D;
+}
+.service .item p{
+    text-transform: capitalize;
+    margin-top: 16px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #29313D;
+}
+
+/* =============================
+service end
+============================= */
+/* =============================
+digital start
+============================= */
+.digital{
+    position: relative;
+}
+.digital .box .left img {
+    width: 110%;
+    height: 521px;
+    position: relative;
+    right: 0;
+    top: 53px;
+    z-index: 1;
+}
+.digital .box .right{
+    margin-top: 8px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 100px 185px;
+    width: 70%;
+    height: 626px;
+    background: url(../images/digital2.png);
+}
+.digital .box .right .frame{
+    position: absolute;
+    top: 186px;
+    right: 0;
+    animation: frameani 2s alternate infinite linear;
+}
+@keyframes frameani{
+    0%{
+        transform:scale(1);
+    }100%{
+        transform:scale(1.2);
+    }
+}
+.digital .box .right h3{
+    width: 570px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 140%;
+    color: #29313D;
+}
+.digital .box .right p{
+    width: 501px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #29313D;
+    margin-top: 10px;
+    margin-bottom: 48px;
+}
+.digital .button a{
+    width: 7%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 200%;
+    background: #FF5538;
+    color: #fff;
+    border: 1px solid #FF5538;
+    padding: 14px 28px;
+    border-radius: 18px;
+    text-align: center;
+    transition: .5s;
+}
+.digital .button a:hover{
+    background: transparent;
+    color: #FF5538;
+}
+
+.digital .round-shape{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 101px;
+    left: 521px;
+    border: 1px solid #FFABBA;
+    position: absolute;
+    animation: dgani 4s infinite linear;
+}
+.digital .iner-shape{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #FFABBA;
+    position: absolute;
+    bottom: 0;
+    left: 9px;
+}
+@keyframes dgani {
+   from{transform:rotate(0);
+    }to{
+    transform:rotate(360deg);
+    }
+   
+}
+/* =============================
+digital end
+============================= */
+/* =============================
+work start
+============================= */
+.work picture {
+    position: absolute;
+    top: -173px;
+    left: 0;
+}
+.work picture img {
+    width: 400px;
+    height: 459px;
+}
+.work{
+    padding: 120px 0;
+    position: relative;
+}
+.work .box{
+    justify-content: space-between;
+    align-items: center;
+}
+.work .title h2{
+    width: 693px;
+}
+.work .button a{
+    width: 7%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 200%;
+    background: #FF5538;
+    color: #fff;
+    border: 1px solid #FF5538;
+    padding: 14px 28px;
+    border-radius: 18px;
+    text-align: center;
+    transition: .5s;
+}
+.work .button a:hover{
+    background: transparent;
+    color: #FF5538;
+}
+
+.work .box2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.work .box2 h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 140%;
+    color: #29313D;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.work .box2 p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100%;
+    color: #FF5538;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.work .box2 .mobile1{
+    margin-top: 60px;
+    width: 39%;
+    background: #fff;
+    -webkit-box-shadow: 0px 7px 82px -6px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 7px 82px -6px rgba(0,0,0,0.1);
+    box-shadow: 0px 7px 82px -6px rgba(0,0,0,0.1);;
+}
+.work .box2 .mobile1 img{
+    width: 100%;
+    height: 331px;
+}
+.work .box2 .mobile2{
+    margin-top: 60px;
+    width: 58%;
+    background: #fff;
+    -webkit-box-shadow: 0px 7px 82px -6px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 7px 82px -6px rgba(0,0,0,0.1);
+    box-shadow: 0px 7px 82px -6px rgba(0,0,0,0.1);;
+}
+.work .box2 .mobile2 img{
+    width: 100%;
+    height: 331px;
+}
+.work .box2 .mobile3{
+    width: 58%;
+    background: #fff;
+    margin-top: 30px;
+    -webkit-box-shadow: 0px 7px 82px -6px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 7px 82px -6px rgba(0,0,0,0.1);
+    box-shadow: 0px 7px 82px -6px rgba(0,0,0,0.1);;
+}
+.work .box2 .mobile3 img{
+    width: 100%;
+    height: 331px;
+}
+.work .box2 .mobile4{
+    width: 39%;
+    background: #fff;
+    margin-top: 30px;
+    -webkit-box-shadow: 0px 7px 82px -6px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 7px 82px -6px rgba(0,0,0,0.1);
+    box-shadow: 0px 7px 82px -6px rgba(0,0,0,0.1);;
+}
+.work .box2 .mobile4 img{
+    width: 100%;
+    height: 331px;
+}
+/* =============================
+work end
+============================= */
+/* =============================
+hundred start
+============================= */
+.hundred .round-shape {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    top: 288px;
+    left: 9px;
+    border: 1px solid #FFABBA;
+    position: absolute;
+    animation: myani 4s infinite linear;
+}
+.hundred .iner-shape {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #FFABBA;
+    position: absolute;
+    bottom: 37px;
+    left: 88px;
+}
+@keyframes myani {
+   from{transform:rotate(0);
+    }to{
+    transform:rotate(360deg);
+    }
+   
+}
+.hundred .round1 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #C087EE;
+    bottom: 11px;
+    left: 648px;
+    animation: tb 2s infinite linear alternate;
+}
+@keyframes tb {
+    from{
+        transform: translateY(-70px);
+    }to{
+        transform: translateY(0);
+    }
+    
+}
+/* amnitiom */
+.hundred{
+    position: relative;
+    background: #FDF9F8;
+    padding: 120px 0;
+    box-sizing: border-box;
+}
+.hundred picture {
+    position: absolute;
+    right: -107px;
+}
+.hundred picture img {
+    width: 400px;
+    height: 350px;
+}
+.hundred .left{
+    z-index: 1;
+    width: 50%;
+    margin-right: 100px;
+}
+.hundred .service{
+    width: 48%;
+    background: #fff;
+    padding: 74px 60px;
+    box-sizing: border-box;
+    color: #29313D;
+}
+.hundred .left .serviceitem{
+    row-gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hundred .service h2{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: capitalize;
+}
+.hundred .service p{
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.hundred .right{
+    width: 50%;
+}
+.hundred .right h2{
+    width: 540px;
+}
+.hundred .right p{
+    width: 591px;
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 200%;
+    color: #29313D;
+}
+
+.hundred .button a{
+    width: 7%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 200%;
+    background: #FF5538;
+    color: #fff;
+    border: 1px solid #FF5538;
+    padding: 14px 28px;
+    border-radius: 18px;
+    text-align: center;
+    transition: .5s;
+}
+.hundred .button a:hover{
+    background: transparent;
+    color: #FF5538;
+}
+/* =============================
+hundred end
+============================= */
+/* =============================
+trusted start
+============================= */
+.trusted{
+    padding: 120px 0;
+    box-sizing: border-box;
+}
+.trusted .title h2{
+    width: 849px;
+    margin: 0 auto;
+    text-align: center;
+}
+.trusted .box{
+    margin-top: 60px;
+    justify-content: space-between;
+}
+.trusted .item{
+    background: #FDF9F8;
+}
+/* =============================
+trusted end
+============================= */
+/* =============================
+customer start
+============================= */
+.customer .cross {
+    color: #C087EE;
+    position: absolute;
+    font-size: 20px;
+    top: 92px;
+    right: 153px;
+    animation: cross 3s linear infinite;
+}
+@keyframes cross{
+    from{transform:rotate(0);
+    }to{
+    transform:rotate(360deg);
+    }
+}
+/* ============== */
+.customer{
+    padding: 120px 0;
+    box-sizing: border-box;
+    background: #FDF9F8;
+    position: relative;
+}
+.customer .left{
+    width: 50%;
+}
+
+.customer .left .cusimg{
+    margin: 60px 0;
+}
+.customer .left .cusimg img{
+    margin-right: 28px;
+}
+.customer .left p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 180%;
+    color: #29313D;
+}
+
+.customer .left .jonathon{
+    display: flex;
+    margin-top: 60px;
+}
+.customer .left .jonathon h5{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 180%;
+    color: #29313D;
+    margin-right: 40px;
+
+}
+.customer .left .jonathon i{
+    margin-right: 24px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 5px;
+    background:#FFABBA;
+    border: 1px solid #FFABBA;
+    transition: .5s;
+}
+
+.customer .left .jonathon i:hover{
+    background: #FF5538;
+    color: #fff;
+}
+
+.customer .right{
+    width: 50%;
+    text-align: center;
+}
+/* =============================
+customer end
+============================= */
+/* =============================
+Got start
+============================= */
+.got{
+    background: #FFD7C8;
+    padding: 100px 0;
+    position: relative;
+}
+.got .title p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #29313D;
+}
+.got .box{
+    justify-content: space-between;
+}
+.got .button{
+    align-self: center;
+    z-index: 1;
+}
+.got .button a{
+    width: 7%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 200%;
+    background: #FF5538;
+    color: #fff;
+    border: 1px solid #FF5538;
+    padding: 14px 28px;
+    border-radius: 18px;
+    text-align: center;
+    transition: .5s;
+}
+.got .button a:hover{
+    background: transparent;
+    color: #FF5538;
+}
+.got .underline{
+    border-top: 1px solid rgba(41, 49, 61,.20);
+    margin-top: 48px;
+}
+.got .underline p{
+    margin-top: 24px;
+    width: 1283px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 180%;
+}
+.got picture{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+.got picture img {
+    width: 401px;
+    height: 315.28px;
+}
+/* =============================
+Got end
+============================= */
+/* =============================
+footer start
+============================= */
+
+footer{
+    padding-top: 140px;
+}
+footer .logo{
+    width: 40%;
+}
+footer .logo p{
+    width: 449px;
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    color: #29313D;
+    margin-top: 44px;
+}
+footer .Features{
+    width: 20%;
+}
+footer .Features h5{
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    margin-bottom: 48px;
+    color: #29313D;
+}
+footer .Features ul li{
+    margin-top: 30px;
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    color: #29313D;
+}
+
+
+footer .lastleft{
+    width: 70%;
+    margin-top: 80px;
+    margin-bottom: 57px;
+}
+footer .lastleft h5{
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+    color: #29313D;
+    animation: last 4s infinite alternate linear;
+}
+
+@keyframes last {
+    0% {color: rgba(0, 195, 255, 0.918);}
+    20% {color: rgb(0, 255, 213);}
+    40% {color: rgb(0, 255, 85);}
+    60% {color: rgb(0, 102, 255);}
+    80% {color: rgb(167, 26, 73);}
+    100% {color: rgb(113, 39, 148);}
+  }
+
+footer .lastright{
+    width: 30%;
+    margin-top: 80px;
+    margin-bottom: 57px;
+}
+footer .lastright p{
+    width: 449px;
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    color: #29313D;
+}
+/* =============================
+footer end
+============================= */
